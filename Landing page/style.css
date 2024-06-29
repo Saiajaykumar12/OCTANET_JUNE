@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width:100%;
+    min-height: 100vh;
+}
+.top{
+    width: 100%;
+    min-height: 60vh; 
+    background-image: url(electronic\ items.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+.top.overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: black;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: black;
+   
+}
+.text h1{
+    font-size: 3vw;
+    font-weight: 400;
+}
+#rtext{
+
+    display:contents;
+    width: 25%;
+    align-items: center;
+    justify-content:space-around;
+}
+.rtext p{
+    font-size: 10px;
+}
+.middle{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1{
+    min-height: inherit;
+    width: 40%;
+    background-image: url(image\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b1 h1{   
+    padding: 10vh;
+    text-align:center;
+}
+.b1 p{
+    text-align: center;
+    padding: 15px;
+    color:black;
+}
+.b2{
+    position: relative;
+    min-height: inherit;
+    width: 30%;
+    background-image: url(laptop.jpg);
+    background-position: center;
+    background-size:cover;
+
+}
+.b2 h1{
+    font-size: 20px;
+    text-align:left ;
+    padding: 10px;
+    color:black;
+}
+.b2 p{
+    position: absolute;
+    font-size: 13px;
+    left: 0px;
+    bottom: 1px;
+    text-align:left;
+    padding: 20px;
+    color: black;
+}
+.b3{
+    position: relative;
+    width: 30%;
+    min-height: 20vh;
+    background-image: url(image\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b3 h1{
+    font-size:15px;
+    position: absolute;
+    top:10px;
+    right: 8px;
+    padding: 26px;
+}
+.b3 p{
+    color: black;
+    position: absolute;
+    font-size: 15px;
+    bottom: 0px;
+    right:0px;
+    padding:30px;
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b4{
+    position: relative;
+    width: 30%;
+    background-image: url(call\ logo.jpg);
+    background-position: center;
+    background-size:cover;
+
+}
+.b4 h1{
+    font-size: 20px;
+    position: absolute;
+    text-align:center ;
+    padding: 10px;
+    color:black;
+}
+.b4  p{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    text-align:left;
+    padding: 10px;
+    color: black;
+}
+.b5{
+    position: relative;
+    width: 30%;
+    background-image:url(image\ 5.jpg);
+    background-position: center;
+    background-size:cover;
+
+}
+.b5 h1{
+    font-size: 20px;
+    position: absolute;
+    text-align:center ;
+    padding: 50px;
+    color:white;
+}
+.b6{
+    position: relative;
+    width: 40%;
+    background-image: url(img.jpeg);
+    background-position: center;
+    background-size:cover;
+
+}
+.b6 h1{
+    font-size: 15px;
+    position: absolute;
+    text-align:left ;
+    padding: 10px;
+    color:black;
+}
+.b6  p{
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    text-align:left;
+    padding: 10px;
+    color: white;
+}
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    
+}
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width:150px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .middle{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+    }
+    .b2{
+        width: 100%;
+        text-align: left;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b4{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+    .b5{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+    .b6{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+
+}
